@@ -45,7 +45,6 @@
         border-radius: 5px;
         box-sizing: border-box;
         padding: 8px 12px;
-        /* margin-bottom: 20px; */
         display: inline-block;
         width: 300px;
       }
@@ -108,7 +107,7 @@
         gap: 4px;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        width: 320px;
       }
 
       body {
@@ -116,7 +115,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* height: 100vh; */
         margin: 0;
       }
     </style>
@@ -131,6 +129,8 @@
       method="post"
       enctype="multipart/form-data"
     >
+    <label> 
+      Enter username
       <input
         class="text-input"
         type="text"
@@ -138,8 +138,11 @@
         placeholder="Username"
         required
       />
+    </label>
 
+    <label for="email">Enter email</label>
       <input
+        id="email"
         class="text-input"
         type="email"
         name="email"
